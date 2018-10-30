@@ -1,5 +1,5 @@
-var dataCacheName = 'lodgerman';
-var cacheName = 'lodgerman';
+var dataCacheName = 'lodgerman inc';
+var cacheName = 'lodgerman inc';
 var filesToCache = [
   '/',
  "./assets/fonts",
@@ -16,6 +16,7 @@ var filesToCache = [
  "./assets/fonts/roboto/Roboto-Thin.woff2",
  "./assets/images",
  "./assets/images/icons",
+ "./assets/images/icon.png",
  "./assets/images/icons/icon-128x128.png",
  "./assets/images/icons/icon-144x144.png",
  "./assets/images/icons/icon-152x152.png",
@@ -26,15 +27,15 @@ var filesToCache = [
  "./assets/js",
  "./assets/js/app.js",
  "./assets/js/jquery-3.3.1.js",
- "/assets/js/mdb.min.js",
- "/assets/js/jquery-3.3.1.min.js",
- "assets/bootstrap.min.js",
- "assets/js/popper.min.js",
+ "./assets/js/mdb.js",
+ "./assets/js/jquery-3.3.1.min.js",
+ "./assets/js/bootstrap.min.js",
+ "./assets/js/popper.min.js",
  "./service-worker.js",
  "./assets/css",
  "./assets/css/style.css",
- "assets/css/bootstrap.min.css",
- "assets/css/mdb.min.css"
+ "./assets/css/bootstrap.min.css",
+ "./assets/css/mdb.min.css"
 ];
 
 self.addEventListener('install', function(e) {

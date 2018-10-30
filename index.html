@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>lodgerman - The landlords paddy</title>
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/css/style.css">
     
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="assets/images/icons/icon-144x144.png">
@@ -33,33 +34,124 @@
          href="assets/images/icons/icon-144x144.png">
          
 </head>
+<style>
+  
+input.navSearch:hover{
+  border:0px;
+}
+div.col-6.areaRow{
+  border:3px solid #33cccc;
+  padding:40px;
+  height: 50px;
+}
+a .suggested_area {
+transition: .3s ease-out;
+}
+.suggested_area {
+margin: 10px;
+border: 2px solid #33CCCC;
+border-radius: 5px;
+padding: 10px;
+ text-align: center;
+ font-size: 16px;
+ color:#000;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+.header {
+font-size: 24px;
+color: #4f4f4f;
+font-weight: 700;
+}
+.suggested_destinations .header {
+margin-top: 2px;
+margin-bottom: 5px;
+}
+.suggested_destinations {
+margin-top: 50px;
+}
+.suggested_destinations {
+padding-top: 50px;
+}
+.suggested_destinations .tiny-divider {
+margin-bottom: 30px;
+}
+.suggested_destinations .col-md-2, .suggested_destinations .col-sm-4, .suggested_destinations .col-xs-6 {
+padding-right: 10px;
+padding-left: 10px;
+}
+.suggested_area:hover{
+  background-color:#33CCCC;
+  color:#fff; 
+}
+.v7-footer-mobile {
+  background:url("assets/images/bg.png");
+  background-size: cover;
+  padding: 3rem;
+  background-repeat: no-repeat;
+}
+.v7-footer-mobile p {
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+	margin-bottom: 1rem;
+}
+</style>
 <body id="body">
     
-<nav class="navbar navbar-expand-lg navbar-light fixed">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" style="border-radius:7px"></span>
+<div style="width:100%" >
+  <div class="card animated slideInLeft" id="sideNav" style="width:70%;z-index:99;position:absolute;height:100%;display:none;">
+    <div class="card-body">
+      <div style="float:right"><i class="fa fa-close" onclick="showNav()"></i></div>
+      <input type="search" class="navSearch" style="border:0px;border-bottom:2px solid #33CCCC" placeholder="Find Lodges around">
+      <br>
+  <div>
+
+    <hr>
+    <h3 class="h3-responsive"> LandLords</h3>
+    <div>
+      <a href="#"><i class="fa fa-home"></i> Add your hostel</a>
+    </div>
+    <div>
+        <a href="#"><i class="fa fa-user-circle-o"></i> Login</a>
+      </div>
+    <hr>
+    <h3 class="h3-responsive">Tenants</h3>
+    <div>
+        <a href="#"><i class="fa fa-money"></i> Pay rents</a>
+      </div>
+      
+    <div>
+        <a href="!#"> <i class="fa fa-user"></i> Login</a>
+        
+      </div>
+      
+   New here?   <a href="!#" class="btn btn-sm" style="margin-left:0px;background-color:#33CCCC">Sign up</a>
+  </div>
+    </div>
+  </div>
+  </div>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" onclick="showNav()">
+    <span class="navbar-toggler-icon"  style="border-radius:7px"></span>
   </button>
-  <a class="navbar-brand" href="index.php">
-      <img src="assets/images/icons/icon-144x144.png" width="40" height="40" class="d-inline-block align-top" alt="">
+  <a class="navbar-brand" href="index.html">
+      <img src="assets/images/icon.png" width="40" height="40" class="d-inline-block align-top" alt="">
 
   </a>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-      <li class="nav-item">
-        <a class="nav-link" href="./index.php">LodgerMan</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="./add-a-listing.php">Add a listing</a>
-      </li>
-      
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-success my-2 my-sm-0 btn-sm">Subscribe</a>
-    </form>
-  </div>
 
 </nav>
       <!-- mobile header -->
@@ -144,10 +236,118 @@ Exterior
 
 
 </header>
+<main>
+
+    <div class="container text-center">
+  <section class="suggested_destination">
+
+          <p></p>
+          <p class="header">Suggested Locations</p>
+          <p class="sub-header text-center">
+            See most visited locations around campus
+          </p>
+          </div>
+
+          <div class="tiny-divider"></div>
+          <p></p>
+<div class="row">
+    <div class="col-md-2 col-sm-4 col-6">
+        <a href="location?id=Eziobodo">
+            <div class="suggested_area">
+                <h2 class="heading h2-responsive">Eziobodo </h2>
+                <p>
+                    353 properties
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-2 col-sm-4 col-6">
+        <a href="location?id=Umuchima">
+            <div class="suggested_area">
+                <h2 class="heading h2-responsive">Umuchima</h2>
+                <p>
+                    53 properties
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-2 col-sm-4 col-6">
+        <a href="location?id=Ihiagwa">
+            <div class="suggested_area">
+                <h2 class="heading h2-responsive">Ihiagwa </h2>
+                <p>
+                    33 properties
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-2 col-sm-4 col-6">
+        <a href="location?id=Obinze">
+            <div class="suggested_area">
+                <h2 class="heading h2-responsive">Obinze</h2>
+                <p>
+                    24 properties
+                </p>
+            </div>
+        </a>
+    </div>
+          
+  </section>
+</div>
 
 
+<div class="container">
+<div class="row">
+  <div class="col-md-4">
 
+      <div class="card" style="
+      margin:30px;">
+      <div class="card-body">
+        <img src="assets/images/good.png" alt="verified" height="40" width="40">
+      See verified Listings
+      </div>
+      </div>
+  </div>
+  <div class="col-md-4">
     
+<div class="card" style="
+margin:30px;">
+  <div class="card-body">
+      <img src="assets/images/bolt.png" alt="verified" height="40" width="40">
+ 
+    Fast and easy searching
+  </div>
+  </div>
+    </div>
+    <div class="col-md-4">
+
+        <div class="card" style="
+        margin:30px;">
+        <div class="card-body">
+            <img src="assets/images/support.png" alt="verified" height="40" width="40">
+   
+          Zero downtime
+        </div>
+        </div>    
+      </div>
+</div>
+
+
+</div> 
+</main>
+
+
+<div class="v7-footer-mobile">
+      <p>About Us</p>
+      <p>Privacy</p>
+      <p>Terms of Service</p>
+      <p>How it works</p>
+      <br>
+      <p style="text-align:center;">Copyright © 2018 lodgerman.inc</p>
+</div>
+<a href="#" class="float">
+    <img src="assets/images/help.png" alt="support">
+    </a>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
