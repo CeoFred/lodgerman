@@ -1,41 +1,74 @@
 
 input.navSearch:hover{
-    border:0px;
+  border:0px;
 }
 div.col-6.areaRow{
-    border:3px solid #33cccc;
-    padding:40px;
-    height: 50px;
+  border:3px solid #33cccc;
+  padding:40px;
+  height: 50px;
 }
-a .suggested_city {
-	transition: .3s ease-out;
+a .suggested_area {
+transition: .3s ease-out;
 }
-.suggested_city {
-	margin-top: 20px;
-	border: 2px solid #00aeff;
-	border-radius: 4px;
-	padding: 10px;
-   text-align: center;
+.suggested_area {
+margin: 10px;
+border: 2px solid #33CCCC;
+border-radius: 5px;
+padding: 10px;
+ text-align: center;
+ font-size: 16px;
+ color:#000;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
 }
 .header {
-	font-size: 24px;
-	color: #4f4f4f;
-	font-weight: 700;
+font-size: 24px;
+color: #4f4f4f;
+font-weight: 700;
 }
 .suggested_destinations .header {
-	margin-top: 2px;
-	margin-bottom: 5px;
+margin-top: 2px;
+margin-bottom: 5px;
 }
 .suggested_destinations {
-	margin-top: 50px;
+margin-top: 50px;
 }
 .suggested_destinations {
-	padding-top: 50px;
+padding-top: 50px;
 }
 .suggested_destinations .tiny-divider {
-	margin-bottom: 30px;
+margin-bottom: 30px;
 }
 .suggested_destinations .col-md-2, .suggested_destinations .col-sm-4, .suggested_destinations .col-xs-6 {
-	padding-right: 10px;
-	padding-left: 10px;
+padding-right: 10px;
+padding-left: 10px;
+}
+.suggested_area:hover{
+  background-color:#33CCCC;
+  color:#fff; 
+}
+.v7-footer-mobile {
+  background:url("../assets/images/bg.png");
+  background-size: cover;
+  padding: 3rem;
+  background-repeat: no-repeat;
+}
+.v7-footer-mobile p {
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+	margin-bottom: 1rem;
 }

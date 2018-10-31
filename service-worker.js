@@ -17,6 +17,7 @@ var filesToCache = [
  "./assets/images",
  "./assets/images/icons",
  "./assets/images/icon.png",
+ './location.php',
  "./assets/images/icons/icon-128x128.png",
  "./assets/images/icons/icon-144x144.png",
  "./assets/images/icons/icon-152x152.png",
